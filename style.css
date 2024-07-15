@@ -1,0 +1,125 @@
+*  {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Roboto", sans-serif;
+outline: none; /*elimina a linha azul da borda */
+
+}
+
+
+body {
+background-color: #8a51fc; /*como todo conteudo tem que estar dentro do body , a cor roxo vai ser na pagina toda */
+
+}
+
+.logo {
+width: 300px;  /* ja foi diminuido o tamanho da imagem aparece no inspecionar devido todo o body estar roxo width determina a largura */
+display: block; /*pra posicionar a imagem ou item ao meio quando as margin for iguai , o block correspe posicionar um item durante toda linha somente , pra economizar linha tambem pode ser margin; 20px auto; */
+margin-left: auto;  /*margin a esquerda igual a direita automatica */
+margin-right: auto;  /*margin a direita igual a esquerda automatica*/
+
+
+}
+
+
+
+main  {
+width: 375px; /*vai posicionar mais ao centro , pq o main eo aplicaçao central do projeto */
+background: #ffffff; /*tambem troca a cor de fundo mais e limitado */
+border-radius: 20px; /* eo arredonadamento da borda */
+margin: 0  auto 40px; /*vai centralizar tambem tudo oque estiver dentro do main , vai seguir o display block */
+padding: 44px 24px 23px; /*quando aparece assim vai aplicar espaço em cima  , dos lados , em baixo nessa ordem */
+}
+
+
+label {    /*legenda para um  item ou interface no caso as palavras converter */
+color: #777777;  /* cor das palavra deixar fosco */
+font-weight: 400px; /*indica o peso o negritude da letra por mais que esteja preto */
+font-size: 14px; /* indica o tamanho das letras */
+}
+
+
+select , input{  /*vai aplicar pra mais de uma tag */
+background: #ffffff; /*vai estilizar as letras ou cores , o background e mais completo doque o color e pode fazer varias aplicaçoes com ele */
+border: 1px solid #888888; /* vai dar estilo grossura ,solida fixa e cor no na borda do input*/
+border-radius: 4px; /*arredondamento da borda */
+height: 38px; /* altura da borda */
+width: 100%; /* grossura da borda */
+margin-bottom: 24px; /* vai espassar os item de fora */
+appearance: none; /* fazer sumir a seta da tag select */
+padding-left: 18px; /* espaco dentro do input lado esquerdo */
+font-weight: 700px; /* peso da fonte em negrito */
+font-size: 18px; /* tamanho da letra */
+color: #555555; /* cor da letra deixar fosco a cor preta */
+cursor: pointer; /*aquela mâozinha do cursor */
+}
+
+button {
+background: #772fd3; /* cor do botâo */
+border-radius: 5px; /*arredondamento da borda */
+width: 100%; /* grossura da borda  tem mais poder doque o px*/
+border: none; /*sem borda */
+height: 48px; /*altura do botão */
+color: #ffffff; /*da cor para oque esta dentro do botão */
+font-weight: 700px; /*peso da fonte ja tem a cor branca*/
+font-size: 18px; /*grossura das letras */
+cursor: pointer;
+}
+
+button:hover { /* permite interatividade */
+opacity: 0.8; /* aqui vai dar um tom apago quando clicado */
+
+
+}
+
+
+button:active { /*autoriza a açao do hover */
+opacity: 0.6; /*quando  o botao for clicado dara um aspecto desbotado */
+
+
+}
+
+section {
+border: 1px solid #772fd3; /*grossura , vai ser fixa solida , cor da borda*/
+border-radius: 20px; /* arredondamento da borda*/
+ margin-top: 40px;/* fez afastar a margin do botao */
+ padding: 12px; /*da espaço pro  lado esquerdo meu */
+ display: flex; /*vai ajustar os itens do lado ou embaixo */
+
+ flex-direction: column; /*justamente com o display vai deixar como coluna um embaixo do outro */
+ align-items: center; /*vai alinhar tudo ao centro */
+ height: 300px;
+
+
+}
+
+.arrow-img {
+margin: 15px 0; /*da espaço em cima e embaixo da imagem seta */
+
+
+}
+
+.currency-box {
+display: flex; /*vai habilitar uns poderes pra deixar os itens do lado oou na frente */
+flex-direction: column; /*deppois de abrir o display , essa tag vai colocar os itens um embaixo do outro*/
+align-items: center; /*vai alinhar todo mundo ao centro */
+gap: 9px; /*tambem so vai funcionar depois que abrir a tag display , vai dar espaço entre os itens de  dentro */
+
+}
+
+
+.currency {
+color: #777777; /*cor das letras */
+font-size: 14px;  /*grossura das letras */
+
+}
+
+.currency-value , .currency-value-to-convert {
+    color: #555555; /*cor das letras */
+    font-weight: 700; /*o peso da fonte ou peso da cor nas letras */
+    font-size: 20px;  /*grossura das letras*/
+
+
+
+}
